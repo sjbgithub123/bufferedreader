@@ -4,14 +4,9 @@ import android.app.*;
 import android.os.*;
 import java.io.*;
 
-public class MainActivity extends Activity 
+public class bufferedutil extends Activity 
 {
-    @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
-		
+   public void test(){
 		//在安卓外部存储卡读取一个文本，读取后将每一行的数乘以2写入另一个文本
 		String path0=Environment.getExternalStorageDirectory().getAbsolutePath()+"/directory/";
 		String name0="text1.txt";
@@ -88,5 +83,6 @@ public class MainActivity extends Activity
 		}
 		catch (IOException e)
 		{}
-    }
+		}
+    
 }
