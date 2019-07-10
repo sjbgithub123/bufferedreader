@@ -4,9 +4,9 @@ import android.app.*;
 import android.os.*;
 import java.io.*;
 
-public class bufferedutil extends Activity 
+public class bufferedutil
 {
-   public void test(){
+   public static void test(){
 		//在安卓外部存储卡读取一个文本，读取后将每一行的数乘以2写入另一个文本
 		String path0=Environment.getExternalStorageDirectory().getAbsolutePath()+"/directory/";
 		String name0="text1.txt";
